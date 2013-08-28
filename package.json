@@ -1,6 +1,6 @@
 {
   "name": "geos-major",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Lightning fast longitude and latitude lookup for country and state codes",
   "main": "index.js",
   "scripts": {
