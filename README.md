@@ -1,6 +1,8 @@
 geos-major
 ==========
 
+[![Build Status](https://travis-ci.org/angleman/geos-major.png)](https://travis-ci.org/[angleman/geos-major)
+
 Lightning fast longitude and latitude lookup for country and state codes.
 
 __Install:__
