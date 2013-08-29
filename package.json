@@ -21,5 +21,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/angleman/geos-major/issues"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {
+     "mocha": "~1.12.0",
+     "should": "~1.2.2"
+   }
 }
