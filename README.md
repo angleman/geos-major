@@ -1,8 +1,4 @@
-# geos-major
-
-[![Build Status](https://travis-ci.org/angleman/geos-major.png)](https://travis-ci.org/[angleman/geos-major)
-
-[Dependency Status](https://gemnasium.com/angleman/geos-major.png)](https://gemnasium.com/angleman/geos-major) [![NPM version](https://badge.fury.io/js/geos-major.png)](http://badge.fury.io/js/geos-major) [![Coverage Status](https://coveralls.io/repos/angleman/geos-major.png)](https://coveralls.io/r/angleman/geos-major)
+# geos-major [![NPM version](https://badge.fury.io/js/geos-major.png)](http://badge.fury.io/js/geos-major) [![Build Status](https://travis-ci.org/angleman/geos-major.png)](https://travis-ci.org/angleman/geos-major) [![Dependency Status](https://gemnasium.com/angleman/geos-major.png)](https://gemnasium.com/angleman/geos-major) 
 
 Lightning fast longitude and latitude lookup for country and state codes.
 
