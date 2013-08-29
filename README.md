@@ -1,17 +1,19 @@
-geos-major
-==========
+# geos-major
 
 [![Build Status](https://travis-ci.org/angleman/geos-major.png)](https://travis-ci.org/[angleman/geos-major)
 
+[Dependency Status](https://gemnasium.com/angleman/geos-major.png)](https://gemnasium.com/angleman/geos-major) [![NPM version](https://badge.fury.io/js/geos-major.png)](http://badge.fury.io/js/geos-major) [![Coverage Status](https://coveralls.io/repos/angleman/geos-major.png)](https://coveralls.io/r/angleman/geos-major)
+
 Lightning fast longitude and latitude lookup for country and state codes.
 
-__Install:__
+## Install
 
 ```
 npm install geos-major
 ```
 
-__Country Lookup:__
+## Country Lookup
+
 ```
 var geos = require('geos-major')
   , geo = geos.country('us');
@@ -19,7 +21,7 @@ console.log(geo); // { "lat": 38.0, "lon": -97.0, "con": "N" }
 
 ```
 
-__CloudFlare Lookup:__
+## CloudFlare Lookup
 ```
 var geos = require('geos-major')
   , cf_country = req.headers['cf-ipcountry']
@@ -27,14 +29,14 @@ var geos = require('geos-major')
 console.log(geo); // { "lat": 38.0, "lon": -97.0, "con": "N" }
 ```
 
-__State Lookup:__
+## State Lookup
 ```
 var geos = require('geos-major')
   , geo = geos.state('TX');
 console.log(geo); // { "lat": 31.1060, "lon": -97.6475 }
 ```
 
-__Continent Lookup:__
+## Continent Lookup
 ```
 var geos = require('geos-major')
   , country = geos.country('us')
@@ -42,9 +44,9 @@ var geos = require('geos-major')
 console.log(continent); // North America
 ```
 
-__Major attributions:__
+## Major attributions
 * Country data: https://gist.github.com/sindresorhus/1341699
 * State data: http://dev.maxmind.com/geoip/legacy/codes/state_latlon/
 * Continent data: https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29
 
-__License: MIT__
+## License: MIT
