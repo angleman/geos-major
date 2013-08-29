@@ -12,13 +12,12 @@ describe('geos-major.continent()', function() {
 
     describe('USA continent', function() {
         it('returns North America', function() {
-            var result = geos.country('us');
-            should.exist(result);
-            console.log(result);
-            result.should.have.property('con');
-            var continent = geos.continent(result.con);
+            var country = geos.country('us');
+            should.exist(country);
+            country.should.have.property('con');
+            var continent = geos.continent(country.con);
             should.exist(continent);
-            console.log(continent);
+            continent.should.equal('North America');
         });
     });
 });

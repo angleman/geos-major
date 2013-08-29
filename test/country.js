@@ -5,19 +5,19 @@ var geos   = require('../geos-major.js');
 describe('geos-major.country()', function() {
     describe('no arguments', function() {
         it('returns an empty array', function() {
-            var result = geos.country();
-            should.not.exist(result);
+            var country = geos.country();
+            should.not.exist(country);
         });
     });
 
     describe('lowercase country code', function() {
         it('returns USA country data', function() {
-            var result = geos.country('us');
-            should.exist(result);
-            result.should.have.keys('lat', 'lon', 'con');
-            result.lat.should.equal(38);
-            result.lon.should.equal(-97);
-            result.con.should.equal('N');
+            var country = geos.country('us');
+            should.exist(country);
+            country.should.have.keys('lat', 'lon', 'con');
+            country.lat.should.equal(38);
+            country.lon.should.equal(-97);
+            country.con.should.equal('N');
         });
     });
 });
