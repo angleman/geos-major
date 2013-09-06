@@ -4,7 +4,8 @@
   "description": "Lightning fast longitude and latitude lookup for country and state codes",
   "main": "geos-major.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha -R list test/*.js",
+    "TESTS.md": "mocha -R markdown test/*.js > TESTS.md"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
   },
   "dependencies": {},
   "devDependencies": {
+     "grunt": "0.4.x",
+     "grunt-bump": "0.0.x",
      "mocha": "~1.12.0",
      "should": "~1.2.2"
    }
