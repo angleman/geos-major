@@ -1,4 +1,4 @@
-# geos-major [![NPM version](https://badge.fury.io/js/geos-major.png)](http://badge.fury.io/js/geos-major) [![Build Status](https://travis-ci.org/angleman/geos-major.png)](https://travis-ci.org/angleman/geos-major) [![Dependency Status](https://gemnasium.com/angleman/geos-major.png)](https://gemnasium.com/angleman/geos-major) 
+# geos-major [![NPM version](https://badge.fury.io/js/geos-major.png?branch=master)](http://badge.fury.io/js/geos-major) [![Build Status](https://travis-ci.org/angleman/geos-major.png?branch=master)](https://travis-ci.org/angleman/geos-major) [![Dependency Status](https://gemnasium.com/angleman/geos-major.png?branch=master)](https://gemnasium.com/angleman/geos-major) 
 
 Lightning fast longitude and latitude lookup for country and state codes.
 
@@ -10,7 +10,7 @@ npm install geos-major
 
 ## Country Lookup
 
-```
+```javascript
 var geos = require('geos-major')
   , geo = geos.country('us');
 console.log(geo); // { "lat": 38.0, "lon": -97.0, "con": "N" }
@@ -18,7 +18,7 @@ console.log(geo); // { "lat": 38.0, "lon": -97.0, "con": "N" }
 ```
 
 ## CloudFlare Lookup
-```
+```javascript
 var geos = require('geos-major')
   , cf_country = req.headers['cf-ipcountry']
   , geo = geos.country(cf_country); // accessed from the USA
@@ -26,14 +26,14 @@ console.log(geo); // { "lat": 38.0, "lon": -97.0, "con": "N" }
 ```
 
 ## State Lookup
-```
+```javascript
 var geos = require('geos-major')
   , geo = geos.state('TX');
 console.log(geo); // { "lat": 31.1060, "lon": -97.6475 }
 ```
 
 ## Continent Lookup
-```
+```javascript
 var geos = require('geos-major')
   , country = geos.country('us')
   , continent = geos.continent(country.con);
