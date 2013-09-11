@@ -43,6 +43,5 @@ console.log(geo); // { "latitude": 31.1060, "longitude": -97.6475 }
 ## Major attributions
 * Country data: [sindresorhus/1341699](https://gist.github.com/sindresorhus/1341699) and [mledoze/countries](https://github.com/mledoze/countries)
 * State data: [maxmind](http://dev.maxmind.com/geoip/legacy/codes/state_latlon/)
-* Continent data: [wikipedia](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29)
 
 ## License: MIT
