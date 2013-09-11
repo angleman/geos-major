@@ -14,9 +14,9 @@ describe('geos-major.state()', function() {
         it('returns Texas country data', function() {
             var state = geos.state('tx');
             should.exist(state);
-            state.should.have.keys('lat', 'lon');
-            state.lat.should.equal(31.106);
-            state.lon.should.equal(-97.6475);
+            state.should.have.keys('latitude', 'longitude');
+            state.latitude.should.equal(31.106);
+            state.longitude.should.equal(-97.6475);
         });
     });
 });

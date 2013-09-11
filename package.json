@@ -1,6 +1,6 @@
 {
   "name": "geos-major",
-  "version": "0.5.5",
+  "version": "1.0.0",
   "description": "Lightning fast longitude and latitude lookup for country and state codes",
   "main": "geos-major.js",
   "scripts": {
@@ -28,11 +28,14 @@
   "bugs": {
     "url": "https://github.com/angleman/geos-major/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
-     "grunt": "0.4.x",
-     "grunt-bump": "0.0.x",
-     "mocha": "~1.12.0",
-     "should": "~1.2.2"
+     "license-md":    "~0.1.8",
+     "grunt":         "~0.4.1",
+     "grunt-bump":    "~0.0.11",
+     "grunt-license": "~0.1.4",
+     "mocha":         "~1.12.0",
+     "should":        "~1.2.2"
    }
 }

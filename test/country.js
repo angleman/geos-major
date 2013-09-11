@@ -14,10 +14,15 @@ describe('geos-major.country()', function() {
         it('returns USA country data', function() {
             var country = geos.country('us');
             should.exist(country);
-            country.should.have.keys('lat', 'lon', 'con');
-            country.lat.should.equal(38);
-            country.lon.should.equal(-97);
-            country.con.should.equal('N');
+
+            should.exist(country.countryCode);
+            country.countryCode.should.equal('US');
+
+            should.exist(country.latitude);
+            country.latitude.should.equal(38);
+
+            should.exist(country.longitude);
+            country.longitude.should.equal(-97);
         });
     });
 });
