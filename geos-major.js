@@ -1,10 +1,5 @@
 'use strict';
 
-var fs        = require('fs')
-  , json      = fs.readFileSync('./countries.json')
-  , countries = JSON.parse(json)
-;
-
 var data = {};
 
 data.country = { 
