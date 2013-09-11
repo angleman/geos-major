@@ -13,8 +13,16 @@ npm install geos-major
 ```javascript
 var geos = require('geos-major')
   , geo = geos.country('us');
-console.log(geo); // { "latitude": 38.0, "longitude": -97.0, "con": "N" }
-
+console.log(geo); /* results:  
+    countryCode: 'US', 
+    countryName: 'United States',
+    currency: 'USD,USN,USS',
+    continent: 'Americas',
+    subContinent: 'Northern America',
+    phoneCode: '1',
+    latitude: 38,
+    longitude: -97 
+} */
 ```
 
 ## CloudFlare Lookup
@@ -22,7 +30,7 @@ console.log(geo); // { "latitude": 38.0, "longitude": -97.0, "con": "N" }
 var geos = require('geos-major')
   , cf_country = req.headers['cf-ipcountry']
   , geo = geos.country(cf_country); // accessed from the USA
-console.log(geo); // { "latitude": 38.0, "longitude": -97.0, "con": "N" }
+console.log(geo); // countryCode: 'US', countryName: 'United States', ...
 ```
 
 ## State Lookup
@@ -30,14 +38,6 @@ console.log(geo); // { "latitude": 38.0, "longitude": -97.0, "con": "N" }
 var geos = require('geos-major')
   , geo = geos.state('TX');
 console.log(geo); // { "latitude": 31.1060, "longitude": -97.6475 }
-```
-
-## Continent Lookup
-```javascript
-var geos = require('geos-major')
-  , country = geos.country('us')
-  , continent = geos.continent(country.con);
-console.log(continent); // North America
 ```
 
 ## Major attributions
