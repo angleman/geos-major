@@ -10,7 +10,7 @@ describe('geos-major.country()', function() {
         });
     });
 
-    describe('lowercase country code', function() {
+    describe('"us"', function() {
         it('returns USA country data', function() {
             var country = geos.country('us');
             should.exist(country);
