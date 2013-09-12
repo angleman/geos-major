@@ -31,7 +31,7 @@
   "dependencies": {
   },
   "devDependencies": {
-     "license-md":    "~0.1.8",
+     "license-md":    "~0.2.1",
      "grunt":         "~0.4.1",
      "grunt-bump":    "~0.0.11",
      "grunt-license": "~0.1.4",
