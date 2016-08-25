@@ -14,7 +14,8 @@ describe('geos-major.state()', function() {
         it('returns Texas country data', function() {
             var state = geos.state('tx');
             should.exist(state);
-            state.should.have.keys('latitude', 'longitude');
+            state.should.have.keys('name', 'latitude', 'longitude');
+            state.name.should.equal('Texas');
             state.latitude.should.equal(31.106);
             state.longitude.should.equal(-97.6475);
         });

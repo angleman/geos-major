@@ -2,7 +2,7 @@
 
 var data = {};
 
-data.country = { 
+data.country = {
   "af": { countryCode: 'AF', countryName: 'Afghanistan', currency: 'AFN', continent: 'Asia', subContinent: 'Southern Asia', phoneCode: '93', latitude: 33, longitude: 65 },
   "al": { countryCode: 'AL', countryName: 'Albania', currency: 'ALL', continent: 'Europe', subContinent: 'Southern Europe', phoneCode: '355', latitude: 41, longitude: 20 },
   "aq": { countryCode: 'AQ', countryName: 'Antarctica', phoneCode: 'null', latitude: -90, longitude: 0 },
@@ -253,83 +253,88 @@ data.country = {
   "ws": { countryCode: 'WS', countryName: 'Samoa', currency: 'WST', continent: 'Oceania', subContinent: 'Polynesia', phoneCode: '685', latitude: -13.5833, longitude: -172.3333 },
   "ye": { countryCode: 'YE', countryName: 'Yemen', currency: 'YER', continent: 'Asia', subContinent: 'Western Asia', phoneCode: '967', latitude: 15, longitude: 48 },
   "zm": { countryCode: 'ZM', countryName: 'Zambia', currency: 'ZMK', continent: 'Africa', subContinent: 'Eastern Africa', phoneCode: '260', latitude: -15, longitude: 30 },
-  "xs": { latitude: 10.1813335, longitude: 114.365081799, continent: 'Asia' } 
+  "xs": { latitude: 10.1813335, longitude: 114.365081799, continent: 'Asia' }
 };
 
 
 
 data.state = {
-	"AK": {"latitude": 61.3850, "longitude": -152.2683},
-	"AL": {"latitude": 32.7990, "longitude": -86.8073},
-	"AR": {"latitude": 34.9513, "longitude": -92.3809},
-	"AS": {"latitude": 14.2417, "longitude": -170.7197},
-	"AZ": {"latitude": 33.7712, "longitude": -111.3877},
-	"CA": {"latitude": 36.1700, "longitude": -119.7462},
-	"CO": {"latitude": 39.0646, "longitude": -105.3272},
-	"CT": {"latitude": 41.5834, "longitude": -72.7622},
-	"DC": {"latitude": 38.8964, "longitude": -77.0262},
-	"DE": {"latitude": 39.3498, "longitude": -75.5148},
-	"FL": {"latitude": 27.8333, "longitude": -81.7170},
-	"GA": {"latitude": 32.9866, "longitude": -83.6487},
-	"HI": {"latitude": 21.1098, "longitude": -157.5311},
-	"IA": {"latitude": 42.0046, "longitude": -93.2140},
-	"ID": {"latitude": 44.2394, "longitude": -114.5103},
-	"IL": {"latitude": 40.3363, "longitude": -89.0022},
-	"IN": {"latitude": 39.8647, "longitude": -86.2604},
-	"KS": {"latitude": 38.5111, "longitude": -96.8005},
-	"KY": {"latitude": 37.6690, "longitude": -84.6514},
-	"LA": {"latitude": 31.1801, "longitude": -91.8749},
-	"MA": {"latitude": 42.2373, "longitude": -71.5314},
-	"MD": {"latitude": 39.0724, "longitude": -76.7902},
-	"ME": {"latitude": 44.6074, "longitude": -69.3977},
-	"MI": {"latitude": 43.3504, "longitude": -84.5603},
-	"MN": {"latitude": 45.7326, "longitude": -93.9196},
-	"MO": {"latitude": 38.4623, "longitude": -92.3020},
-	"MP": {"latitude": 14.8058, "longitude": -145.5505},
-	"MS": {"latitude": 32.7673, "longitude": -89.6812},
-	"MT": {"latitude": 46.9048, "longitude": -110.3261},
-	"NC": {"latitude": 35.6411, "longitude": -79.8431},
-	"ND": {"latitude": 47.5362, "longitude": -99.7930},
-	"NE": {"latitude": 41.1289, "longitude": -98.2883},
-	"NH": {"latitude": 43.4108, "longitude": -71.5653},
-	"NJ": {"latitude": 40.3140, "longitude": -74.5089},
-	"NM": {"latitude": 34.8375, "longitude": -106.2371},
-	"NV": {"latitude": 38.4199, "longitude": -117.1219},
-	"NY": {"latitude": 42.1497, "longitude": -74.9384},
-	"OH": {"latitude": 40.3736, "longitude": -82.7755},
-	"OK": {"latitude": 35.5376, "longitude": -96.9247},
-	"OR": {"latitude": 44.5672, "longitude": -122.1269},
-	"PA": {"latitude": 40.5773, "longitude": -77.2640},
-	"PR": {"latitude": 18.2766, "longitude": -66.3350},
-	"RI": {"latitude": 41.6772, "longitude": -71.5101},
-	"SC": {"latitude": 33.8191, "longitude": -80.9066},
-	"SD": {"latitude": 44.2853, "longitude": -99.4632},
-	"TN": {"latitude": 35.7449, "longitude": -86.7489},
-	"TX": {"latitude": 31.1060, "longitude": -97.6475},
-	"UT": {"latitude": 40.1135, "longitude": -111.8535},
-	"VA": {"latitude": 37.7680, "longitude": -78.2057},
-	"VI": {"latitude": 18.0001, "longitude": -64.8199},
-	"VT": {"latitude": 44.0407, "longitude": -72.7093},
-	"WA": {"latitude": 47.3917, "longitude": -121.5708},
-	"WI": {"latitude": 44.2563, "longitude": -89.6385},
-	"WV": {"latitude": 38.4680, "longitude": -80.9696},
-	"WY": {"latitude": 42.7475, "longitude": -107.2085}
+  "AA": { name:"U.S. Armed Forces – Americas", latitude: 33.0364, longitude: -82.2493 }, // first of 2: http://usa.youbianku.com/category/state/AA
+  "AE": { name:"U.S. Armed Forces – Europe", latitude:48.5, longitude: 23.383333 }, // geographical midpoint of Europe https://tools.wmflabs.org/geohack/geohack.php?pagename=Geographical_midpoint_of_Europe&params=48_30_N_23_23_E_type:landmark
+  "AP": { name:"U.S. Armed Forces – Pacific", latitude: 33.2116, longitude: -97.0876 }, // first of 6: http://usa.youbianku.com/category/state/AP
+	"AK": { name:"Alaska", latitude: 61.3850, longitude: -152.2683 },
+	"AL": { name:"Alabama", latitude: 32.7990, longitude: -86.8073 },
+	"AR": { name:"Arkansas", latitude: 34.9513, longitude: -92.3809 },
+	"AS": { name:"American Samoa", latitude: 14.2417, longitude: -170.7197 },
+	"AZ": { name:"Arizona", latitude: 33.7712, longitude: -111.3877 },
+	"CA": { name:"California", latitude: 36.1700, longitude: -119.7462 },
+	"CO": { name:"Colorado", latitude: 39.0646, longitude: -105.3272 },
+	"CT": { name:"Connecticut", latitude: 41.5834, longitude: -72.7622 },
+	"DC": { name:"District Of Columbia", latitude: 38.8964, longitude: -77.0262 },
+	"DE": { name:"Delaware", latitude: 39.3498, longitude: -75.5148 },
+	"FL": { name:"Florida", latitude: 27.8333, longitude: -81.7170 },
+  "FM": { name:"Federated States Of Micronesia", latitude: 7.1383, longitude: 151.5031 },
+	"GA": { name:"Georgia", latitude: 32.9866, longitude: -83.6487 },
+  "GU": { name:"Guam", latitude: 39.0176, longitude: -122.0666 }, // http://usa.youbianku.com/category/state/GU
+	"HI": { name:"Hawaii", latitude: 21.1098, longitude: -157.5311 },
+	"IA": { name:"Iowa", latitude: 42.0046, longitude: -93.2140 },
+	"ID": { name:"Idaho", latitude: 44.2394, longitude: -114.5103 },
+	"IL": { name:"Illinois", latitude: 40.3363, longitude: -89.0022 },
+	"IN": { name:"Indiana", latitude: 39.8647, longitude: -86.2604 },
+	"KS": { name:"Kansas", latitude: 38.5111, longitude: -96.8005 },
+	"KY": { name:"Kentucky", latitude: 37.6690, longitude: -84.6514 },
+	"LA": { name:"Louisiana", latitude: 31.1801, longitude: -91.8749 },
+	"MA": { name:"Massachusetts", latitude: 42.2373, longitude: -71.5314 },
+	"MD": { name:"Maryland", latitude: 39.0724, longitude: -76.7902 },
+	"ME": { name:"Maine", latitude: 44.6074, longitude: -69.3977 },
+  "MH": { name:"Marshall Islands", latitude: 9, longitude: 168 },
+	"MI": { name:"Michigan", latitude: 43.3504, longitude: -84.5603 },
+	"MN": { name:"Minnesota", latitude: 45.7326, longitude: -93.9196 },
+	"MO": { name:"Missouri", latitude: 38.4623, longitude: -92.3020 },
+	"MP": { name:"Northern Mariana Islands", latitude: 14.8058, longitude: -145.5505 },
+	"MS": { name:"Mississippi", latitude: 32.7673, longitude: -89.6812 },
+	"MT": { name:"Montana", latitude: 46.9048, longitude: -110.3261 },
+	"NC": { name:"North Carolina", latitude: 35.6411, longitude: -79.8431 },
+	"ND": { name:"North Dakota", latitude: 47.5362, longitude: -99.7930 },
+	"NE": { name:"Nebraska", latitude: 41.1289, longitude: -98.2883 },
+	"NH": { name:"New Hampshire", latitude: 43.4108, longitude: -71.5653 },
+	"NJ": { name:"New Jersey", latitude: 40.3140, longitude: -74.5089 },
+	"NM": { name:"New Mexico", latitude: 34.8375, longitude: -106.2371 },
+	"NV": { name:"Nevada", latitude: 38.4199, longitude: -117.1219 },
+	"NY": { name:"New York", latitude: 42.1497, longitude: -74.9384 },
+	"OH": { name:"Ohio", latitude: 40.3736, longitude: -82.7755 },
+	"OK": { name:"Oklahoma", latitude: 35.5376, longitude: -96.9247 },
+	"OR": { name:"Oregon", latitude: 44.5672, longitude: -122.1269 },
+	"PA": { name:"Pennsylvania", latitude: 40.5773, longitude: -77.2640 },
+	"PR": { name:"Puerto Rico", latitude: 18.2766, longitude: -66.3350 },
+  "PW": { name:"Palau", latitude: 7.2257, longitude: 134.3622 }, // http://usa.youbianku.com/category/state/PW
+	"RI": { name:"Rhode Island", latitude: 41.6772, longitude: -71.5101 },
+	"SC": { name:"South Carolina", latitude: 33.8191, longitude: -80.9066 },
+	"SD": { name:"South Dakota", latitude: 44.2853, longitude: -99.4632 },
+	"TN": { name:"Tennessee", latitude: 35.7449, longitude: -86.7489 },
+	"TX": { name:"Texas", latitude: 31.1060, longitude: -97.6475 },
+	"UT": { name:"Utah", latitude: 40.1135, longitude: -111.8535 },
+	"VA": { name:"Virginia", latitude: 37.7680, longitude: -78.2057 },
+	"VI": { name:"Virgin Islands", latitude: 18.0001, longitude: -64.8199 },
+	"VT": { name:"Vermont", latitude: 44.0407, longitude: -72.7093 },
+	"WA": { name:"Washington", latitude: 47.3917, longitude: -121.5708 },
+	"WI": { name:"Wisconsin", latitude: 44.2563, longitude: -89.6385 },
+	"WV": { name:"West Virginia", latitude: 38.4680, longitude: -80.9696 },
+	"WY": { name:"Wyoming", latitude: 42.7475, longitude: -107.2085 }
 }
 
 
 
-function country(code)
-{
+function country(code) {
 	code = (code) ? code.toLowerCase() : '';
 	return data.country[code];
 }
 
 
 
-function state(code)
-{
+function state(code) {
 	code = (code) ? code.toUpperCase() : '';
-	return data.state[code];
+  return data.state[code];
 }
 
 
